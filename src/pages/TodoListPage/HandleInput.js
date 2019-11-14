@@ -29,6 +29,7 @@ class HandleInput extends PureComponent {
         inputValue: ""
       }));
     } else {
+      message.destroy();
       message.info("请输入值后提交");
     }
   };

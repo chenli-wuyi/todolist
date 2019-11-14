@@ -5,6 +5,7 @@ class Home extends PureComponent {
     return (
       <Fragment>
         <ComHeader />
+        
       </Fragment>
     );
   }
