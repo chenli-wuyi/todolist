@@ -1,5 +1,6 @@
 import React, { Fragment, PureComponent } from "react";
 import HandleInput from "./HandleInput";
+import ComHeader from "../../components/Header";
 import Todo from "./Todo";
 import Yet from "./Yet";
 import "./index.scss";
@@ -38,6 +39,7 @@ class TodoList extends PureComponent {
     const { toDoList, yetList } = this.state;
     return (
       <Fragment>
+          <ComHeader />
         <HandleInput onClick={this.handleClick} />
         <Todo
           toDoList={toDoList}

@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import 'sanitize.css/sanitize.css'
 import './globle.scss'
-import TodoList from "./TodoListPage";
+// import TodoList from "./pages/TodoListPage";
+import Router from './router'
 
-ReactDOM.render(<TodoList />, document.getElementById("root"));
+ReactDOM.render(<Router />, document.getElementById("root"));
