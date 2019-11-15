@@ -1,6 +1,7 @@
 import React, { Fragment, PureComponent } from "react";
 import { Progress } from "antd";
 import { Link } from "react-router-dom";
+import axios from 'axios'
 import { parseTime } from "../../utils";
 import "./style.scss";
 class Home extends PureComponent {
@@ -16,6 +17,9 @@ class Home extends PureComponent {
         time: parseTime(new Date())
       }));
     }, 1000);
+    axios.post('/bsent/getResult').then(res => {
+      console.log(res);
+    })
   }
 
   componentWillUnmount() {
