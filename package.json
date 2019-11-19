@@ -67,7 +67,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
-  "proxy": "http://sit.kuaidi100.com",
+  "proxy": "http://172.21.30.103:8081",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -1,5 +1,5 @@
 import React, { Fragment, PureComponent } from "react";
-import ComHeader from "../../components/Header";
+import ComHeader from "components/Header";
 class Home extends PureComponent {
   render() {
     return (
